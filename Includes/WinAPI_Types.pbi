@@ -10,15 +10,15 @@
 ;
 ; ==- Compatibility -=============================
 ;  Compiler version: PureBasic 5.70 (x86/x64)
-;  Operating system: Windows
+;  Operating system: Windows 10 (Previous versions untested)
 ;
 ; ==- Sources -===================================
 ;  https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types
 ; 
 ; ==- Links & License -===========================
-;   Github: https://github.com/aziascreations/???
-;     Doc.: https://github.com/aziascreations/???/Documentation/WinAPI_Types
-;  License: Unlicense
+;   Github: https://github.com/aziascreations/PB-WinAPI-Additions
+;     Doc.: https://github.com/aziascreations/PB-WinAPI-Additions/Documentation/WinAPI_Types.md
+;  License: Unlicense (Only applies to the includes, not Microsoft's API)
 ;
 ;}
 
@@ -141,8 +141,15 @@ Macro LONG64 : q : EndMacro
 ; Macro aaaaaaa : aaaaaaa : EndMacro
 
 Macro PDWORD : i : EndMacro
+Macro PVOID : i : EndMacro
 Macro PHANDLE : i : EndMacro
 
+
+Macro UCHAR : a : EndMacro
+Macro ULONG : l : EndMacro
+
+
+Macro WCHAR : u : EndMacro
 Macro WINAPI : q : EndMacro
 Macro WORD : w : EndMacro
 
